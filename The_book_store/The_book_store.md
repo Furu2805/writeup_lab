@@ -102,9 +102,12 @@ File shell này giúp tìm các file có tên bắt đầu là flag và kết th
 Loay hoay một hồi thì mình chợt nhận ra rằng file upload là up ảnh minh họa =)), lúc này mình nghĩ là liệu có mở được file ảnh ko. Click chuột trái vào ảnh và chọn được mở sang một tap khác 
 
 ![1](./images/12.png)
-Vậy là ta đã có đường dẫn để mở file path.php
 
-Giờ chúng ta đã có file flag_paths.txt tìm đường dẫn flag :  
+- Vậy là ta đã có đường dẫn để mở file path.php, ta vào đường dẫn /img/books/path.php được nội dung sau 
+
+![2](./images/16.png)
+
+- Giờ ta đã có file flag_paths.txt tìm đường dẫn flag :  
 /flagR3LgR.txt
 
 - Payload: /description.php?ID=NEW' UNION SELECT 1,2,3,4,5,6,7,8,9,10,11,LOAD_FILE('/flagR3LgR.txt'),13,14,15-- -&category=new
